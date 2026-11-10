@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempo: Chess Clock</title>
+<meta name="description" content="Tempo is a beautiful two-player chess clock for Android, Fire tablets and Fire TV, with Fischer, Bronstein and delay timing. By Odhuno App Developers.">
+<meta name="theme-color" content="#0b0c0f">
+<meta property="og:title" content="Tempo: Chess Clock">
+<meta property="og:description" content="A beautiful two-player chess clock with Fischer, Bronstein and delay timing.">
+<meta property="og:image" content="assets/social-card.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <img src="assets/icon-512.png" alt="" width="36" height="36">
+      <span>Tempo <small>Chess clock</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Over-the-board chess</span>
+        <h1>Your move.<br><strong>Your clock.</strong></h1>
+        <p class="lede">A beautiful two-player chess clock for Android phones, tablets, Fire tablets and Fire TV. Clear clocks, instant response, every time control.</p>
+        <div class="stores">
+          <span class="store" aria-label="Google Play, coming soon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.2-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z"/></svg>
+            <span><small>Coming soon</small>Google Play</span>
+          </span>
+          <span class="store" aria-label="Amazon Appstore, coming soon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+            <span><small>Coming soon</small>Amazon Appstore</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="demo" aria-label="Try it: a working chess clock">
+        <div class="demo-clock">
+          <button class="face black" id="black" type="button" aria-label="Black's clock">
+            <span class="side">BLACK</span><span class="time">3:00</span><span class="tag">Tap to start</span>
+          </button>
+          <div class="demo-bar">
+            <button type="button" id="pause">Pause</button>
+            <button type="button" id="reset" class="primary">Reset</button>
+          </div>
+          <button class="face white" id="white" type="button" aria-label="White's clock">
+            <span class="side">WHITE</span><span class="time">3:00</span><span class="tag">White moves first</span>
+          </button>
+        </div>
+        <p class="demo-hint">Try it: tap a clock to end your move. 3 minutes + 2 seconds.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-title">
+        <span class="eyebrow">Made for the board</span>
+        <h2>Everything a clock needs, nothing it doesn't</h2>
+        <p>Set it beside the board and play. No account, no setup, no distractions during the game.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2" fill="currentColor" fill-opacity=".25"/></svg></div>
+          <h3>White and Black, at a glance</h3>
+          <p>An ivory clock for White and a charcoal one for Black. The running clock glows amber; the other steps back.</p>
+        </article>
+        <article class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+          <h3>Instant response</h3>
+          <p>Your move ends the moment your finger touches the screen, so close games are decided on the board.</p>
+        </article>
+        <article class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div>
+          <h3>Every time control</h3>
+          <p>15 presets from bullet to classical, or build your own with custom minutes, seconds and increment.</p>
+        </article>
+        <article class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h16M4 6h10M4 18h7"/></svg></div>
+          <h3>Fischer, Bronstein and delay</h3>
+          <p>All three increment styles used in clubs and tournaments, timed to a tenth of a second.</p>
+        </article>
+        <article class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></div>
+          <h3>Low-time warning</h3>
+          <p>In the last ten seconds the clock turns red and shows tenths, with a clear time-out and winner display.</p>
+        </article>
+        <article class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8"/></svg></div>
+          <h3>Phone, tablet and Fire TV</h3>
+          <p>On a TV the clocks sit side by side for the whole room, and the remote's OK button ends each move.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-title">
+        <span class="eyebrow">See it</span>
+        <h2>Calm when you're thinking. Clear when it counts.</h2>
+      </div>
+      <div class="screens">
+        <figure>
+          <img src="assets/phone-game.webp" alt="Tempo on a phone during a game: Black's clock is running with an amber outline, White's clock is dimmed." width="720" height="1280" loading="lazy">
+          <figcaption>Mid-game on a phone</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/phone-time-controls.webp" alt="The time control screen with presets grouped into bullet, blitz, rapid and classical." width="720" height="1280" loading="lazy">
+          <figcaption>Pick a time control</figcaption>
+        </figure>
+        <figure class="tablet">
+          <img src="assets/tablet-low-time.webp" alt="Tempo on a tablet: White's clock shows 0:07.4 in red with a Low time label." width="900" height="1440" loading="lazy">
+          <figcaption>Low time on a tablet</figcaption>
+        </figure>
+        <figure class="tv">
+          <img src="assets/tv-game.webp" alt="Tempo on Fire TV: two clocks side by side with the controls between them." width="1600" height="900" loading="lazy">
+          <figcaption>Side by side on Fire TV</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta">
+        <span class="eyebrow">Free download</span>
+        <h2>Coming soon to Google Play and the Amazon Appstore</h2>
+        <p style="color: var(--muted); margin: 0;">Questions or feedback? Write to <a href="mailto:webmasterkey01@gmail.com">webmasterkey01@gmail.com</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Odhuno App Developers</span>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:webmasterkey01@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // A small working chess clock: 3 minutes + 2 seconds Fischer, the same rules as the app.
+  (function () {
+    var BASE = 180000, INC = 2000, LOW = 10000;
+    var faces = { black: document.getElementById("black"), white: document.getElementById("white") };
+    var pauseBtn = document.getElementById("pause");
+    var state;
+
+    function reset() {
+      state = { left: { black: BASE, white: BASE }, active: null, phase: "ready", since: 0, flagged: null };
+      render();
+    }
+
+    function now() { return performance.now(); }
+
+    function remaining(side) {
+      var ms = state.left[side];
+      if (state.phase === "running" && state.active === side) ms -= now() - state.since;
+      return Math.max(0, ms);
+    }
+
+    function format(ms) {
+      var tenths = Math.ceil(ms / 100);
+      if (tenths < 100) return "0:0" + Math.floor(tenths / 10) + "." + (tenths % 10);
+      var s = Math.ceil(ms / 1000);
+      return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+    }
+
+    function press(side) {
+      if (state.phase === "ready") {
+        state.active = "white"; state.phase = "running"; state.since = now();
+      } else if (state.phase === "running" && state.active === side) {
+        state.left[side] = remaining(side) + INC;
+        state.active = side === "white" ? "black" : "white";
+        state.since = now();
+      }
+      render();
+    }
+
+    function togglePause() {
+      if (state.phase === "running") {
+        state.left[state.active] = remaining(state.active); state.phase = "paused";
+      } else if (state.phase === "paused") {
+        state.phase = "running"; state.since = now();
+      }
+      render();
+    }
+
+    function render() {
+      ["black", "white"].forEach(function (side) {
+        var el = faces[side], ms = remaining(side), isActive = state.active === side;
+        if (state.phase === "running" && isActive && ms <= 0) {
+          state.left[side] = 0; state.phase = "flagged"; state.flagged = side;
+        }
+        el.querySelector(".time").textContent = format(state.left[side] === 0 ? 0 : ms);
+        el.classList.toggle("active", state.phase === "running" && isActive && ms >= LOW);
+        el.classList.toggle("low", state.phase === "running" && isActive && ms < LOW);
+        el.classList.toggle("waiting", state.phase === "running" && !isActive);
+        el.classList.toggle("out", state.flagged === side);
+        var tag = "";
+        if (state.phase === "ready") tag = side === "white" ? "White moves first" : "Tap to start";
+        else if (state.phase === "paused" && isActive) tag = "Paused";
+        else if (state.phase === "flagged") tag = state.flagged === side ? "Time out" : "Wins on time";
+        else if (isActive) tag = ms < LOW ? "Low time" : "Your move";
+        var tagEl = el.querySelector(".tag");
+        tagEl.textContent = tag;
+        tagEl.style.visibility = tag ? "visible" : "hidden";
+      });
+      pauseBtn.textContent = state.phase === "paused" ? "Resume" : "Pause";
+      pauseBtn.disabled = !(state.phase === "running" || state.phase === "paused");
+    }
+
+    function loop() {
+      if (state.phase === "running") render();
+      requestAnimationFrame(loop);
+    }
+
+    // Respond on press, not release, like the app.
+    ["black", "white"].forEach(function (side) {
+      faces[side].addEventListener("pointerdown", function (e) { e.preventDefault(); press(side); });
+      faces[side].addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); press(side); }
+      });
+    });
+    pauseBtn.addEventListener("click", togglePause);
+    document.getElementById("reset").addEventListener("click", reset);
+
+    reset();
+    requestAnimationFrame(loop);
+  })();
+</script>
+</body>
+</html>
