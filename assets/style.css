@@ -171,6 +171,37 @@ h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.025
 }
 .cta .stores { justify-content: center; margin-top: 24px; }
 
+/* ---- Download ---- */
+.download-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.download-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--amber); color: var(--on-amber); text-decoration: none; font-weight: 700;
+  font-size: 17px; padding: 15px 26px 15px 22px; border-radius: 16px;
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--amber) 28%, transparent);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.download-btn:hover { background: #ffc451; color: var(--on-amber); transform: translateY(-1px); }
+.download-btn svg { width: 20px; height: 20px; }
+.download-btn.large { font-size: 19px; padding: 18px 32px 18px 26px; margin-top: 8px; }
+.download-meta { color: var(--muted); font-size: 14px; text-decoration: none; }
+.download-meta:hover { color: var(--text); }
+.cta-lede { color: var(--muted); margin: 0 auto 22px; max-width: 52ch; }
+.cta-foot { color: var(--muted); margin: 24px 0 0; font-size: 15px; }
+.file-facts { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 32px; margin: 26px 0 8px; }
+.file-facts div { text-align: center; }
+.file-facts dt { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); }
+.file-facts dd { margin: 2px 0 0; font-weight: 600; }
+.install {
+  text-align: left; max-width: 620px; margin: 28px auto 0; padding: 24px 28px;
+  background: color-mix(in srgb, var(--bg) 55%, transparent); border: 1px solid var(--line); border-radius: 20px;
+}
+.install h3 { margin: 0 0 8px; font-size: 18px; }
+.install ol { margin: 0; padding-left: 1.3em; color: var(--muted); }
+.install li { margin: 6px 0; }
+.install strong { color: var(--text); }
+.checksum { margin: 16px 0 0; font-size: 13px; color: var(--faint); overflow-wrap: anywhere; }
+.checksum code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; color: var(--muted); }
+
 /* ---- Legal pages ---- */
 .legal { padding: 56px 0 80px; }
 .paper {
@@ -209,6 +240,7 @@ h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.025
   .hero .wrap { grid-template-columns: 1fr; gap: 40px; text-align: center; }
   .lede { margin-inline: auto; }
   .stores { justify-content: center; }
+  .download-row { justify-content: center; }
   .features { grid-template-columns: 1fr 1fr; }
   .screens { grid-template-columns: 1fr 1fr; }
   .screens .tablet { grid-column: 1 / -1; max-width: 460px; justify-self: center; }
@@ -229,8 +261,11 @@ h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.025
   .paper tr { border-bottom: 1px solid rgba(21, 22, 26, 0.1); padding: 10px 0; }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .site-nav a[href="#features"] { display: none; }
+}
+@media (max-width: 380px) {
+  .site-nav a[href="#download"] { display: none; }
   .store { max-width: 100%; }
   .store span { font-size: 15px; }
 }
